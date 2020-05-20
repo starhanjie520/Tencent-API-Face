@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yuncai.menjin.camera_demo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextureView
+            android:id="@+id/texture_view"
+            android:layout_width="400dp"
+            android:layout_height="700dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <CheckBox
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위치"
+            android:id="@+id/check1"/>
+        <Spinner
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="7dp"
+            android:id="@+id/Spinner01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="speed"
+            android:layout_toRightOf="@id/check1"
+            ></Spinner>
+        <Button
+            android:layout_marginEnd="7dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_takePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작"
+            android:layout_toRightOf="@id/Spinner01"
+            />
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/btn_takePic"
+            android:id="@+id/test001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알수 없음"
+            android:textSize="15sp"
+            android:shadowRadius="5"
+            android:shadowColor="#D81B60"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        />
+</merge>
